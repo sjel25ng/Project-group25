@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(242, 159, 197);
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.top-bar {
+  background-color: rgb(255, 245, 155);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bottom-bar {
+  background-color: rgb(255, 245, 155);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
