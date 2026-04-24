@@ -41,7 +41,8 @@ body {
 }
 
 .logo-large {
-  width: 350px;
+  width: 440px;
+  max-width: 90%;
 }
 
 .nav {
@@ -56,6 +57,7 @@ body {
   border-radius: 40px;
   padding: 12px 30px;
   font-size: 22px;
+  font-weight: bold;
 }
 
 /*hero*/
@@ -76,6 +78,7 @@ body {
   border-radius: 40px;
   padding: 18px 50px;
   font-size: 28px;
+  font-weight: bold;
 }
 .ticket-pink {
   background: rgb(251, 85, 171);
@@ -110,14 +113,15 @@ body {
 }
 .image-container {
   position: relative;
-  width: 700px;
+  width: 95%;
   max-width: 900px;
   margin: 0 auto;
 }
 .artist-img {
   width: 100%;
+  height: auto;
   display: block;
-  border-radius: 40px;
+  margin: 0 auto 10px auto;
 }
 .overlay {
   position: absolute;
@@ -166,4 +170,70 @@ body {
   padding: 20px 60px;
   font-size: 30px;
   font-weight: bold;
+}
+.tickets-body {
+  margin: 0;
+  background-color: rgb(242, 159, 197);
+  font-family: Georgia, serif;
+}
+
+.ticket-logo-small {
+width: 140px;
+}
+.ticket-hero {
+  text-align: center;
+  margin-top: 20px;
+}
+.ticket-logo-large {
+  width: 440px;
+  max-width: 90%;
+}
+.ticket-hero h1 {
+  color: rgb(242, 159, 197);
+  font-size: 54px;
+  margin: 10px 0 40px 0;
+}
+.ticket-list {
+  width: 80%;
+  margin: 0 auto;
+}
+.ticket-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 18px;
+}
+.ticket-row img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.ticket-info h2 {
+  font-size: 28px;
+  margin: 0;
+  color: black;
+}
+.ticket-info p {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 8px 0 0 0;
+  color: black;
+}
+.ticket-row button {
+  background: rgb(255, 64, 170);
+  color: white;
+  border: none;
+  border-radius: 28px;
+  padding: 16px 18px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+}
+.small-row img {
+  width: 145px;
+  height: 145px;
+}
+.small-row {
+  margin-top: 35px;
 }
