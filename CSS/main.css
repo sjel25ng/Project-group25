@@ -22,3 +22,52 @@ body {
   bottom: 0;
   left: 0;
 }
+.container {
+  width: 700px;
+  margin: auto;
+  background: rgb (247, 189, 219);
+  border-radius: 60px;
+  padding: 20px;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-small {
+  width: 120px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-btn {
+  background: rgb(247, 189, 219);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+/*hero*/
+.hero {
+  text-align: center;
+}
+
+.date {
+  color: rgb(247, 189, 219);
+  font-weight: bold;
+}
+
+.ticket-yellow {
+  background: rgb(255, 245, 155);
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
