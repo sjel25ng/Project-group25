@@ -66,7 +66,7 @@ body {
 }
 
 .date {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 0, 136);
   font-size: 32px;
   font-weight: bold;
 }
@@ -89,16 +89,23 @@ body {
   font-size: 28px;
 }
 
-.media {
-  margin-top: 40px;
+.gallery {
+  width: 100%;
 }
 
-.media img {
-  width: 1200px;
-  max-width: 100%;
-  height: auto;
+.top-images {
+  display: flex;
+  width: 100%;
+}
+.top-images img {
+  width: 50%;
+  height: 700px;
+}
+
+.bottom-image img {
+  width: 75%;
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 0 auto;
 }
 
 .text {
@@ -178,7 +185,7 @@ body {
 }
 
 .ticket-logo-small {
-width: 140px;
+  width: 140px;
 }
 .ticket-hero {
   text-align: center;
@@ -187,11 +194,6 @@ width: 140px;
 .ticket-logo-large {
   width: 440px;
   max-width: 90%;
-}
-.ticket-hero h1 {
-  color: rgb(242, 159, 197);
-  font-size: 54px;
-  margin: 10px 0 40px 0;
 }
 .ticket-list {
   width: 80%;
@@ -224,7 +226,7 @@ width: 140px;
   background: rgb(255, 64, 170);
   color: white;
   border: none;
-  border-radius: 28px;
+  border-radius: 40px;
   padding: 16px 18px;
   font-size: 22px;
   font-weight: bold;
@@ -236,4 +238,66 @@ width: 140px;
 }
 .small-row {
   margin-top: 35px;
+}
+.hotel-page {
+  width: 1100%;
+  max-width: 95%;
+  margin: 80px auto 0 auto;
+  background: rgb(247, 189, 219);
+  padding: 40px 25px 30px;
+  box-sizing: border-box;
+}
+.hotel-title {
+  text-align: center;
+  color: rgb(255, 0, 140);
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.hotel-subtitle {
+  text-align: center;
+  color: rgb(255, 62, 168);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.hotel-description {
+  text-align: center;
+  color: rgb(255, 99, 185);
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.hotel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hotel-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hotel-card img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+.hotel-info h2 {
+  font-size: 28px;
+  margin: 0 0 18px 0;
+  color: black;
+}
+.hotel-info p {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: black;
+}
+.book-btn {
+  background: rgb(255, 64, 170);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
