@@ -21,8 +21,6 @@ body {
   height: 80px;
   width: 100%;
   position: fixed;
-  bottom: 0;
-  left: 0;
 }
 .container {
   width: 100%;
@@ -99,11 +97,12 @@ body {
 }
 .top-images img {
   width: 50%;
-  height: 700px;
+  height: 600px;
+  margin: 5px;
 }
 
 .bottom-image img {
-  width: 75%;
+  width: 55%;
   display: block;
   margin: 0 auto;
 }
@@ -300,4 +299,53 @@ body {
   padding: 12px 30px;
   font-size: 18px;
   font-weight: bold;
+}
+.menu-page {
+  background-color: rgb(242, 159, 197);
+  margin: 0;
+}
+.menu-container {
+  text-align: center;
+  margin-top: 140px;
+}
+.menu-title {
+  font-size: 55px;
+  color: rgb(255, 0, 140);
+  margin-bottom: 40px;
+}
+.menu-links {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.menu-links a {
+  text-decoration: none;
+  font-size: 28px;
+  color: rgb(255, 51, 163);
+  font-weight: bold;
+}
+.menu-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 50px auto;
+  display: block;
+}
+.menu-footer {
+  background-color: rgb(255, 245, 155);
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.socials a {
+  text-decoration: none;
+  color: black;
 }
