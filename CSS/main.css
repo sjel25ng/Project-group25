@@ -32,6 +32,11 @@ body {
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo-small {
   width: 100px;
 }
@@ -68,6 +73,9 @@ body {
 }
 
 .ticket-yellow {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
   background: rgb(255, 245, 155);
   color: black;
   border: none;
