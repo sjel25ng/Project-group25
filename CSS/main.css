@@ -73,24 +73,26 @@ a {
 }
 
 .ticket-yellow {
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
+  display: inline-block;
+  margin: 10px auto;
   background: rgb(255, 245, 155);
   color: black;
   border: none;
   border-radius: 40px;
-  padding: 18px 50px;
+  padding: 10px 25px;
   font-size: 28px;
   font-weight: bold;
 }
 .ticket-pink {
+  display: inline-block;
+  margin: 20px auto;
   background: rgb(251, 85, 171);
   color: black;
   border: none;
   border-radius: 40px;
-  padding: 18px 50px;
+  padding: 10px 25px;
   font-size: 28px;
+  font-weight: bold;
 }
 
 .gallery {
@@ -175,14 +177,15 @@ a {
 }
 .ticket-pink {
   display: block;
-  margin: 40px auto;
+  margin: 20px auto;
   background: rgb(255, 64, 170);
   color: white;
   border: none;
   border-radius: 40px;
-  padding: 20px 60px;
+  padding: 10px 25px;
   font-size: 30px;
   font-weight: bold;
+  width: fit-content;
 }
 .tickets-body {
   margin: 0;
@@ -356,6 +359,11 @@ a {
   text-decoration: none;
   color: black;
 }
+.socials-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
 .cart-body {
   margin: 0;
   padding: 0;
@@ -486,11 +494,4 @@ a {
 }
 .footer-logo {
   width: 210px;
-}
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  font-size: 28px;
-  font-weight: bold;
 }
