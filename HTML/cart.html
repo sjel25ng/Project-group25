@@ -26,26 +26,20 @@
         <div class="nav-right">
           <a href="ticketpage.html" class="menu-btn">Tickets</a>
           <a href="hotelpackages.html" class="menu-btn">Hotel packages</a>
-           <a href="contact.html" class="menu-btn">Contact</a>
-          <a href="cart.html" class="menu-btn">Cart</a>
+          <a href="contact.html" class="menu-btn">Contact</a>
+          <a href="cart.html" class="menu-btn cart-link">
+            Cart <span id="cart-count"></span>
+          </a>
         </div>
       </header>
-      
+
       <section class="cart-content">
         <div class="cart-title-row">
           <a href="index.html" class="black-arrow">←</a>
           <h1>Your Cart</h1>
         </div>
-
-        <div class="cart-item">
-          <img src="../images/festival_square.png" alt="Ticket Image" />
-          <div class="cart-item-text">
-            <h2>Standard Friday & Saturday</h2>
-            <p>3000 kr</p>
-          </div>
-        </div>
-
-        <h2 class="total-price">Total: 3000 kr</h2>
+        <div id="cart-items"></div>
+        <h2 class="total-price">Total: <span id="cart-total"></span></h2>
 
         <div class="cart-buttons">
           <button class="continue-btn">Continue Shopping</button>
@@ -65,5 +59,6 @@
         </div>
       </footer>
     </main>
+    <script src="../JS/script.JS"></script>
   </body>
 </html>

@@ -27,7 +27,9 @@
           <a href="ticketpage.html" class="menu-btn">Tickets</a>
           <a href="hotelpackages.html" class="menu-btn">Hotel packages</a>
           <a href="contact.html" class="menu-btn">Contact</a>
-          <a href="cart.html" class="menu-btn">Cart</a>
+          <a href="cart.html" class="menu-btn cart-link">
+            Cart <span id="cart-count"></span>
+          </a>
         </div>
       </header>
 
@@ -37,21 +39,25 @@
       </section>
       <section class="ticket-list">
         <div class="ticket-row">
-          <img src="../images/standard.png" alt="Ticket Standard" class="ticket-icon"/>
+          <img
+            src="../images/standard.png"
+            alt="Ticket Standard"
+            class="ticket-icon"
+          />
           <div class="ticket-info">
             <h2>Standard Friday & Saturday</h2>
             <p>3000kr</p>
           </div>
           <div class="ticket-actions">
             <input type="number" class="ticket-quantity" min="1" value="1" />
-          <button
-            class="add-cart-btn"
-            data-name="Standard Friday & Saturday"
-            data-price="3000"
+            <button
+              class="add-cart-btn"
+              data-name="Standard Friday & Saturday"
+              data-price="3000"
             >
-          Add to cart
-        </button>
-        </div>
+              Add to cart
+            </button>
+          </div>
         </div>
         <div class="ticket-row">
           <img
@@ -65,14 +71,14 @@
           </div>
           <div class="ticket-actions">
             <input type="number" class="ticket-quantity" min="1" value="1" />
-          <button
-            class="add-cart-btn"
-            data-name="Golden Friday & Saturday"
-            data-price="5000"
+            <button
+              class="add-cart-btn"
+              data-name="Golden Friday & Saturday"
+              data-price="5000"
             >
-          Add to cart
-        </button>
-        </div>
+              Add to cart
+            </button>
+          </div>
         </div>
         <div class="ticket-row">
           <img
@@ -86,14 +92,14 @@
           </div>
           <div class="ticket-actions">
             <input type="number" class="ticket-quantity" min="1" value="1" />
-          <button
-            class="add-cart-btn"
-            data-name="Table Friday & Saturday"
-            data-price="8500"
+            <button
+              class="add-cart-btn"
+              data-name="Table Friday & Saturday"
+              data-price="8500"
             >
-          Add to cart
-        </button>
-        </div>
+              Add to cart
+            </button>
+          </div>
         </div>
         <div class="ticket-row">
           <img
@@ -107,14 +113,14 @@
           </div>
           <div class="ticket-actions">
             <input type="number" class="ticket-quantity" min="1" value="1" />
-          <button
-            class="add-cart-btn"
-            data-name="Standard Friday"
-            data-price="1700"
+            <button
+              class="add-cart-btn"
+              data-name="Standard Friday"
+              data-price="1700"
             >
-          Add to cart
-        </button>
-        </div>
+              Add to cart
+            </button>
+          </div>
         </div>
         <div class="ticket-row">
           <img
@@ -128,14 +134,14 @@
           </div>
           <div class="ticket-actions">
             <input type="number" class="ticket-quantity" min="1" value="1" />
-          <button
-            class="add-cart-btn"
-            data-name="Standard Saturday"
-            data-price="1700"
+            <button
+              class="add-cart-btn"
+              data-name="Standard Saturday"
+              data-price="1700"
             >
-          Add to cart
-        </button>
-        </div>
+              Add to cart
+            </button>
+          </div>
         </div>
         <div class="ticket-row">
           <img
@@ -149,14 +155,10 @@
           </div>
           <div class="ticket-actions">
             <input type="number" class="ticket-quantity" min="1" value="1" />
-          <button
-            class="add-cart-btn"
-            data-name="Pre Party"
-            data-price="399"
-            >
-          Add to cart
-        </button>
-        </div>
+            <button class="add-cart-btn" data-name="Pre Party" data-price="399">
+              Add to cart
+            </button>
+          </div>
         </div>
         <div class="ticket-row">
           <img
@@ -170,14 +172,14 @@
           </div>
           <div class="ticket-actions">
             <input type="number" class="ticket-quantity" min="1" value="1" />
-          <button
-            class="add-cart-btn"
-            data-name="After Party"
-            data-price="499"
+            <button
+              class="add-cart-btn"
+              data-name="After Party"
+              data-price="499"
             >
-          Add to cart
-        </button>
-        </div>
+              Add to cart
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -186,19 +188,30 @@
         <img src="../images/logoall.png" class="logo-small" alt="Logo 1" />
       </a>
 
-       <div class="socials">
+      <div class="socials">
         <a href="#">
-          <img src="../images/instagram.png" class="socials-icon" alt="Instagram" />
+          <img
+            src="../images/instagram.png"
+            class="socials-icon"
+            alt="Instagram"
+          />
         </a>
-         <a href="#">
-          <img src="../images/tiktoklogo.png" class="socials-icon" alt="TikTok" />
+        <a href="#">
+          <img
+            src="../images/tiktoklogo.png"
+            class="socials-icon"
+            alt="TikTok"
+          />
         </a>
-         <a href="#">
-          <img src="../images/youtubelogo.webp" class="socials-icon" alt="YouTube" />
+        <a href="#">
+          <img
+            src="../images/youtubelogo.webp"
+            class="socials-icon"
+            alt="YouTube"
+          />
         </a>
       </div>
     </footer>
-    <script src="../JS/tickets.js"></script>
-  
+    <script src="../JS/script.JS"></script>
   </body>
 </html>
