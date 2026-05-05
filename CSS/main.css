@@ -2,7 +2,7 @@ body {
   background-color: rgb(242, 159, 197);
   margin: 0;
   overflow-x: hidden;
-  padding-top: 120px;
+  padding-top: 140px;
 }
 
 .header {
@@ -234,26 +234,26 @@ a {
   max-width: 90%;
 }
 .ticket-list {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 .ticket-row {
-  display: grid;
-  grid-template-columns: 150px 1fr 150px;
+  display: flex;
+  grid-template-columns: 140px 1fr 150px;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 18px;
+  gap: 25px;
+  margin-bottom: 25px;
   background: rgb(247, 189, 219);
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .ticket-row img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
 }
 
@@ -356,12 +356,19 @@ a {
 .menu-page {
   background-color: rgb(242, 159, 197);
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .menu-container {
-  text-align: center;
-  margin-top: 140px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .menu-title {
+  text-align: center;
   font-size: 55px;
   color: rgb(255, 0, 140);
   margin-bottom: 40px;
@@ -369,13 +376,18 @@ a {
 .menu-links {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 .menu-links a {
-  text-decoration: none;
-  font-size: 28px;
-  color: rgb(255, 51, 163);
-  font-weight: bold;
+  display: inline-block;
+  background: rgb (255, 64, 170);
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: 200px;
+  text-align: center;
 }
 .menu-circle {
   width: 200px;
@@ -541,4 +553,36 @@ a {
   display: flex;
   gap: 15px;
   margin-right: 20px;
+}
+.ticket-actions {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.ticket-quantity {
+  width: 60px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  font-family: Georgia, serif;
+}
+.add-cart-btn {
+  width: 140px;
+  padding: 10px 16px;
+  background: rgb(255, 64, 170);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 18px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  cursor: pointer;
+}
+.add-cart-btn:hover {
+  background: rgb(220, 40, 140);
 }

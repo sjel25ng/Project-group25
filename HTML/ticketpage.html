@@ -24,12 +24,10 @@
         </div>
 
         <div class="nav-right">
-          <a href="cart.html" class="menu-btn">Cart</a>
-
           <a href="ticketpage.html" class="menu-btn">Tickets</a>
-          <a href="contact.html" class="menu-btn">Contact</a>
           <a href="hotelpackages.html" class="menu-btn">Hotel packages</a>
-          <a href="index.html" class="menu-btn">Home</a>
+          <a href="contact.html" class="menu-btn">Contact</a>
+          <a href="cart.html" class="menu-btn">Cart</a>
         </div>
       </header>
 
@@ -39,16 +37,21 @@
       </section>
       <section class="ticket-list">
         <div class="ticket-row">
-          <img
-            src="../images/standard.png"
-            alt="Ticket Standard"
-            class="ticket-icon"
-          />
+          <img src="../images/standard.png" alt="Ticket Standard" class="ticket-icon"/>
           <div class="ticket-info">
             <h2>Standard Friday & Saturday</h2>
             <p>3000kr</p>
           </div>
-          <button>BUY NOW</button>
+          <div class="ticket-actions">
+            <input type="number" class="ticket-quantity" min="1" value="1" />
+          <button
+            class="add-cart-btn"
+            data-name="Standard Friday & Saturday"
+            data-price="3000"
+            >
+          Add to cart
+        </button>
+        </div>
         </div>
         <div class="ticket-row">
           <img
@@ -60,7 +63,16 @@
             <h2>Golden Friday & Saturday</h2>
             <p>5000kr</p>
           </div>
-          <button>BUY NOW</button>
+          <div class="ticket-actions">
+            <input type="number" class="ticket-quantity" min="1" value="1" />
+          <button
+            class="add-cart-btn"
+            data-name="Golden Friday & Saturday"
+            data-price="5000"
+            >
+          Add to cart
+        </button>
+        </div>
         </div>
         <div class="ticket-row">
           <img
@@ -72,7 +84,16 @@
             <h2>Table Friday & Saturday</h2>
             <p>8500kr & min. spend 1000kr/pers</p>
           </div>
-          <button>BUY NOW</button>
+          <div class="ticket-actions">
+            <input type="number" class="ticket-quantity" min="1" value="1" />
+          <button
+            class="add-cart-btn"
+            data-name="Table Friday & Saturday"
+            data-price="8500"
+            >
+          Add to cart
+        </button>
+        </div>
         </div>
         <div class="ticket-row">
           <img
@@ -84,7 +105,16 @@
             <h2>Standard Friday</h2>
             <p>1700kr</p>
           </div>
-          <button>BUY NOW</button>
+          <div class="ticket-actions">
+            <input type="number" class="ticket-quantity" min="1" value="1" />
+          <button
+            class="add-cart-btn"
+            data-name="Standard Friday"
+            data-price="1700"
+            >
+          Add to cart
+        </button>
+        </div>
         </div>
         <div class="ticket-row">
           <img
@@ -96,7 +126,16 @@
             <h2>Standard Saturday</h2>
             <p>1700kr</p>
           </div>
-          <button>BUY NOW</button>
+          <div class="ticket-actions">
+            <input type="number" class="ticket-quantity" min="1" value="1" />
+          <button
+            class="add-cart-btn"
+            data-name="Standard Saturday"
+            data-price="1700"
+            >
+          Add to cart
+        </button>
+        </div>
         </div>
         <div class="ticket-row">
           <img
@@ -108,7 +147,16 @@
             <h2>Pre-Party</h2>
             <p>399kr</p>
           </div>
-          <button>BUY NOW</button>
+          <div class="ticket-actions">
+            <input type="number" class="ticket-quantity" min="1" value="1" />
+          <button
+            class="add-cart-btn"
+            data-name="Pre Party"
+            data-price="399"
+            >
+          Add to cart
+        </button>
+        </div>
         </div>
         <div class="ticket-row">
           <img
@@ -120,7 +168,16 @@
             <h2>After-Party</h2>
             <p>499kr</p>
           </div>
-          <button>BUY NOW</button>
+          <div class="ticket-actions">
+            <input type="number" class="ticket-quantity" min="1" value="1" />
+          <button
+            class="add-cart-btn"
+            data-name="After Party"
+            data-price="499"
+            >
+          Add to cart
+        </button>
+        </div>
         </div>
       </section>
     </main>
@@ -141,5 +198,7 @@
         </a>
       </div>
     </footer>
+    <script src="../JS/tickets.js"></script>
+  
   </body>
 </html>
