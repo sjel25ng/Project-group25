@@ -66,13 +66,18 @@ a {
   display: flex;
   gap: 15px;
 }
+.nav-right {
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+}
 
 .menu-btn {
   background: rgb(255, 64, 170);
   color: white;
   border-radius: 40px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 14px 28px;
+  font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -113,51 +118,102 @@ a {
 }
 
 .ticket-pink {
-  display: inline-block;
-  margin: 20px auto;
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
   background: rgb(251, 85, 171);
-  color: black;
-  border: none;
+  color: white;
   border-radius: 40px;
   padding: 10px 25px;
   font-size: 28px;
   font-weight: bold;
 }
+.ticket-pink:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 153, 0.8);
+  transform: scale(1.05);
+}
 
 .gallery {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
-.top-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding: 40px;
-}
-.top-images img {
+.bottom-image {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.top-images img:hover {
-  transform: scale(1.03);
-  transition: 0.3s ease;
 }
 
 .bottom-image img {
-  width: 80%;
-  display: block;
-  margin: 40px auto;
+  width: 900px;
+  height: 600px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .text {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.7;
+  font-family: georgia, serif;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+}
+.pink-box {
+  width: 100%;
+  max-width: 1400px;
+  margin: 80px auto;
+  background: rgba(247, 189, 219, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 70px;
+  border-radius: 30px;
+  box-shadow:
+    0 0 80px rgba(255, 64, 170, 0.45),
+    /*AI Helped with this*/ 0 0 160px rgba(220, 40, 140, 0.35);
+  box-sizing: border-box;
+}
+.pink-box2 {
+  width: 100%;
+  max-width: 1400px;
+  margin: 80px auto;
+  background: rgba(247, 189, 219, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow:
+    0 0 80px rgba(255, 64, 170, 0.45),
+    /*AI Helped with this*/ 0 0 160px rgba(220, 40, 140, 0.35);
+  box-sizing: border-box;
+}
+.pink-box3 {
+  width: 100%;
+  max-width: 900px;
+  margin: 80px auto;
+  background: rgba(247, 189, 219, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow:
+    0 0 80px rgba(255, 64, 170, 0.45),
+    /*AI Helped with this*/ 0 0 160px rgba(220, 40, 140, 0.35);
+  box-sizing: border-box;
+}
+.pink-box4 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 80px auto;
+  background: rgba(247, 189, 219, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow:
+    0 0 80px rgba(255, 64, 170, 0.45),
+    /*AI Helped with this*/ 0 0 160px rgba(220, 40, 140, 0.35);
+  box-sizing: border-box;
 }
 
 .artists {
@@ -176,6 +232,7 @@ a {
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
+  border-radius: 30px;
 }
 .overlay {
   position: absolute;
@@ -214,18 +271,6 @@ a {
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
-.ticket-pink {
-  display: block;
-  margin: 20px auto;
-  background: rgb(255, 64, 170);
-  color: white;
-  border: none;
-  border-radius: 40px;
-  padding: 10px 25px;
-  font-size: 30px;
-  font-weight: bold;
-  width: fit-content;
-}
 .tickets-body {
   margin: 0;
   background-color: rgb(242, 159, 197);
@@ -250,7 +295,7 @@ a {
   max-width: 90%;
 }
 .ticket-list {
-  width: 75%;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -258,14 +303,19 @@ a {
 }
 .ticket-row {
   display: flex;
-  grid-template-columns: 140px 1fr 150px;
   align-items: center;
   gap: 25px;
   margin-bottom: 25px;
-  background: rgb(247, 189, 219);
-  border-radius: 20px;
+  background: rgb(247, 189, 219, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
   padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 0 30px rgba(255, 245, 155, 0.25),
+    0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 250px rgb(220, 40, 140);
 }
 .ticket-row img {
   width: 140px;
@@ -274,9 +324,7 @@ a {
 }
 
 .ticket-row:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-  transition: 0.2s ease;
+  transform: translateY(-6px);
 }
 
 .ticket-info h2 {
@@ -436,14 +484,12 @@ a {
   object-fit: contain;
 }
 .cart-body {
-  margin: 0;
-  padding: 0;
-  background: white;
+  padding-top: 175px;
+  background-color: rgb(242, 159, 197);
   font-family: Georgia, serif;
 }
 .cart-page {
-  width: 100%;
-  min-height: 100vh;
+  justify-content: center;
   background: rgb(247, 189, 219);
 }
 .cart-header {
@@ -468,9 +514,10 @@ a {
 .cart-content {
   flex: 1;
   padding-top: 140px;
-  max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  max-width: 1200px;
+  width: 90%;
 }
 .cart-title-row {
   position: relative;
@@ -482,10 +529,9 @@ a {
 }
 .black-arrow {
   position: absolute;
-  left: 5px;
+  left: 1px;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
+  font-size: 28px;
 }
 .cart-item {
   display: flex;
@@ -495,17 +541,16 @@ a {
   margin-top: 50px;
 }
 .cart-item img {
-  width: 85px;
-  height: 85px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
 }
-.cart-item h2 {
-  font-size: 19px;
+#cart-items h2 {
+  font-size: 22px;
   margin: 0;
 }
-.cart-item p {
-  font-size: 20px;
-  font-weight: bold;
+#cart-items p {
+  font-size: 18px;
   margin: 4px 0;
 }
 .cart-buttons {
@@ -519,12 +564,6 @@ a {
   margin-top: 60px;
   font-size: 22px;
 }
-.cart-buttons {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
 
 .payment-btn {
   border: none;
@@ -534,21 +573,26 @@ a {
   font-family: Georgia, serif;
   font-size: 18px;
   padding: 12px 28px;
-}
-.continue-btn {
-  background: rgb(255, 64, 170);
-}
-.payment-btn {
   background: rgb(76, 166, 255);
 }
+
+.continue-btn {
+  border: none;
+  border-radius: 999px;
+  color: white;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding: 12px 28px;
+  background: rgb(255, 64, 170);
+}
+
 .cart-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-.cart-content {
-  flex: 1;
-}
+
 .cart-footer {
   background-color: rgb(255, 245, 155);
   width: 100%;
@@ -577,8 +621,9 @@ a {
   border-radius: 20px;
   border: none;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   font-family: Georgia, serif;
+  justify-content: right;
 }
 .add-cart-btn {
   width: 140px;
@@ -594,32 +639,65 @@ a {
   cursor: pointer;
 }
 .add-cart-btn:hover {
-  background: rgb(220, 40, 140);
+  box-shadow: 0 0 15px rgba(255, 64, 170, 0.7);
+  transform: translateY(-2px);
 }
+
 .cart-ticket {
   background: rgb(247, 189, 219);
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px;
+  width: 95%;
+  max-width: 1000px;
   margin: 20px auto;
-  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.cart-ticket img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cart-info {
+  flex: 1;
+  text-align: left;
+}
+.cart-info h2 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+.cart-info {
+  font-size: 20px;
+  margin: 6px 0;
 }
 .cart-ticket button {
   background: rgb(255, 64, 170);
   color: white;
   border: none;
   border-radius: 40px;
-  padding: 10px 20px;
+  padding: 14px 25px;
+  font-family: georgia, serif;
+  font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
+}
+.cart-ticket button:hover {
+  box-shadow: 0 0 15px rgba(255, 64, 170, 0.7);
+  transform: translateY(-2px);
 }
 
 .video-hero {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 800px;
   overflow: hidden;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .video-hero::after {
@@ -634,14 +712,12 @@ a {
 
 .bg-video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  width: auto;
-  min-width: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
 }
 
 .video-overlay {
@@ -651,6 +727,7 @@ a {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .hero-content {

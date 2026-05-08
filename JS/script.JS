@@ -59,23 +59,19 @@ function loadCart() {
 
   cartItemsContainer.innerHTML = "";
 
-  if (cart.length === 0) {
-    cartItemsContainer.innerHTML = "<p> Your cart is empty.</p>";
-    cartTotal.textContent = "0 kr";
-    return;
-  }
   cart.forEach((item, index) => {
     let subtotal = item.price * item.quantity;
     total += subtotal;
 
     cartItemsContainer.innerHTML += `
         <div class="cart-ticket">
-            <img src="${item.image}" alt="${item.name}" style="width:120px; height: 120px; object-fit:cover; border-radius:10px;"></img>
+            <img src="${item.image}" alt="${item.name}" class="cart-ticket-img">
             <h2>${item.name}</h2>
             <p>Price: ${item.price} kr</p>
             <p>Quantity: ${item.quantity}</p>
             <p>Subtotal: ${subtotal}kr</p>
-            <button onclick="removeFromCart (${index})">Remove</button>
+        </div>
+        <button onclick="removeFromCart (${index})">Remove</button>
         </div>
         `;
   });
