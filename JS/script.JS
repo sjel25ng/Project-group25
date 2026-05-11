@@ -49,6 +49,7 @@ addCartButtons.forEach((button) => {
 
 /*Load cart page */
 function loadCart() {
+
   const cartItemsContainer = document.getElementById("cart-items");
   const cartTotal = document.getElementById("cart-total");
 
@@ -60,56 +61,89 @@ function loadCart() {
   cartItemsContainer.innerHTML = "";
 
   cart.forEach((item, index) => {
+
     let subtotal = item.price * item.quantity;
     total += subtotal;
 
     cartItemsContainer.innerHTML += `
-        <div class="cart-ticket">
-            <img src="${item.image}" alt="${item.name}" class="cart-ticket-img">
-            <h2>${item.name}</h2>
-            <p>Price: ${item.price} kr</p>
-            <p>Quantity: ${item.quantity}</p>
-            <p>Subtotal: ${subtotal}kr</p>
-        </div>
-        <button onclick="removeFromCart (${index})">Remove</button>
-        </div>
-        `;
+
+      <div class="cart-ticket">
+
+        <img 
+          src="${item.image}" 
+          alt="${item.name}" 
+          class="cart-ticket-img"
+        >
+
+        <h2>${item.name}</h2>
+
+        <p>Price: ${item.price} kr</p>
+
+        <p>Quantity: ${item.quantity}</p>
+
+        <p>Subtotal: ${subtotal} kr</p>
+
+        <button 
+          class="remove-btn"
+          onclick="removeFromCart(${index})"
+        >
+          Remove
+        </button>
+
+      </div>
+
+    `;
   });
 
-  cartTotal.textContent = total + "kr";
+  cartTotal.textContent = total + " kr";
 }
+
+
 /*Remove items */
 window.removeFromCart = function (index) {
+
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   cart.splice(index, 1);
-  localStorage.setItem("cart", JSON.stringify(cart));
 
-  clear-cart-btn.addEventListener("click", function () {
-    localStorage.removeItem("cart");
-  });
+  localStorage.setItem("cart", JSON.stringify(cart));
 
   loadCart();
   updateCartCount();
 };
 
+
 /*continue shopping button*/
 const continueBtn = document.querySelector(".continue-btn");
 
 if (continueBtn) {
+
   continueBtn.addEventListener("click", function () {
+
     window.location.href = "ticketpage.html";
+
   });
+
 }
+
 
 /*Payment Button*/
 const paymentBtn = document.querySelector(".payment-btn");
 
 if (paymentBtn) {
+
   paymentBtn.addEventListener("click", function () {
+
     alert("Payment page is not available yet.");
+
   });
+
 }
+
+
+/*run on every page */
+updateCartCount();
+loadCart();
 
 /*run on every page */
 updateCartCount();

@@ -684,21 +684,10 @@ a {
   font-weight: bold;
   cursor: pointer;
 }
+
 .cart-ticket button:hover {
   box-shadow: 0 0 15px rgba(255, 64, 170, 0.7);
   transform: translateY(-2px);
-}
-
-.clear-cart-btn {
-  background: rgb(255, 64, 170);
-  color: white;
-  border: none;
-  border-radius: 40px;
-  padding: 14px 25px;
-  font-family: georgia, serif;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .video-hero {
