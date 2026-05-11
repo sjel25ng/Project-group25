@@ -85,6 +85,10 @@ window.removeFromCart = function (index) {
   cart.splice(index, 1);
   localStorage.setItem("cart", JSON.stringify(cart));
 
+  clear-cart-btn.addEventListener("click", function () {
+    localStorage.removeItem("cart");
+  });
+
   loadCart();
   updateCartCount();
 };
