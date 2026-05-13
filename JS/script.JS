@@ -49,7 +49,6 @@ addCartButtons.forEach((button) => {
 
 /*Load cart page */
 function loadCart() {
-
   const cartItemsContainer = document.getElementById("cart-items");
   const cartTotal = document.getElementById("cart-total");
 
@@ -61,7 +60,6 @@ function loadCart() {
   cartItemsContainer.innerHTML = "";
 
   cart.forEach((item, index) => {
-
     let subtotal = item.price * item.quantity;
     total += subtotal;
 
@@ -79,7 +77,14 @@ function loadCart() {
 
         <p>Price: ${item.price} kr</p>
 
-        <p>Quantity: ${item.quantity}</p>
+        <label>Quantity:</label>
+       <input 
+         type="number" 
+         min="1" 
+         value="${item.quantity}" 
+         class="cart-quantity"
+         onchange="updateCartQuantity(${index}, this.value)"
+       >
 
         <p>Subtotal: ${subtotal} kr</p>
 
@@ -98,10 +103,8 @@ function loadCart() {
   cartTotal.textContent = total + " kr";
 }
 
-
-/*Remove items */
+/*Remove items*/
 window.removeFromCart = function (index) {
-
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   cart.splice(index, 1);
@@ -111,35 +114,40 @@ window.removeFromCart = function (index) {
   loadCart();
   updateCartCount();
 };
+/*Update quantity in cart*/
+window.updateCartQuantity = function (index, newQuantity) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+  newQuantity = parseInt(newQuantity);
 
+  if (newQuantity < 1 || isNaN(newQuantity)) {
+    newQuantity = 1;
+  }
+
+  cart[index].quantity = newQuantity;
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  loadCart();
+  updateCartCount();
+};
 /*continue shopping button*/
 const continueBtn = document.querySelector(".continue-btn");
 
 if (continueBtn) {
-
   continueBtn.addEventListener("click", function () {
-
     window.location.href = "ticketpage.html";
-
   });
-
 }
-
 
 /*Payment Button*/
 const paymentBtn = document.querySelector(".payment-btn");
 
 if (paymentBtn) {
-
   paymentBtn.addEventListener("click", function () {
-
     alert("Payment page is not available yet.");
-
   });
-
 }
-
 
 /*run on every page */
 updateCartCount();

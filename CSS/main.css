@@ -114,7 +114,7 @@ a {
 
 .ticket-yellow:hover {
   box-shadow: 0 0 20px rgba(255, 245, 155, 0.8);
-  transform: scale(1.05);
+  transform: translateY(-2px);
 }
 
 .ticket-pink {
@@ -130,7 +130,7 @@ a {
 }
 .ticket-pink:hover {
   box-shadow: 0 0 20px rgba(255, 0, 153, 0.8);
-  transform: scale(1.05);
+  transform: translateY(-2px);
 }
 
 .gallery {
@@ -324,7 +324,7 @@ a {
 }
 
 .ticket-row:hover {
-  transform: translateY(-6px);
+  transform: translateY(-2px);
 }
 
 .ticket-info h2 {
@@ -445,7 +445,7 @@ a {
 }
 .menu-links a {
   display: inline-block;
-  background: rgb (255, 64, 170);
+  background: rgb(255, 64, 170);
   color: white;
   font-size: 18px;
   padding: 10px 20px;
@@ -558,6 +558,10 @@ a {
   display: flex;
   justify-content: center;
   gap: 80px;
+}
+.cart-btn:hover {
+  background-color: #e63f91;
+  transform: translateY(-2px);
 }
 .total-price {
   text-align: center;
@@ -690,6 +694,19 @@ a {
   transform: translateY(-2px);
 }
 
+.disabled-btn {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.cart-quantity {
+  width: 60px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
 .video-hero {
   position: relative;
   width: 100%;
@@ -801,4 +818,60 @@ body {
     rgb(242, 159, 197) 0%,
     rgb(255, 180, 210) 100%
   );
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .header,
+  .ticket-row,
+  .hotel-card,
+  .cart-ticket,
+  .columns {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-center,
+  .nav-right,
+  .ticket-actions,
+  .cart-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bottom-image img,
+  .hotel-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pink-box,
+  .pink-box2,
+  .pink-box3,
+  .pink-box4 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .menu-btn,
+  .ticket-yellow,
+  .ticket-pink,
+  .add-cart-btn,
+  .continue-btn,
+  .payment-btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-date,
+  .date {
+    font-size: 22px;
+  }
+
+  .col {
+    width: 100%;
+  }
 }
